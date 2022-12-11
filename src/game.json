@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Dog 1",
+        "description": "Dog 1",
+        "tags": "",
+        "route": "dog 1",
+        "source": "/swf/dog_1.swf",
+        "gameType": "flash",
+        "width": "1000px",
+        "height": "625px",
+        "listed": true
+    },
+    {
+        "title": "Dog 2",
+        "description": "Dog 2",
+        "tags": "",
+        "route": "dog 2",
+        "source": "/swf/dog_2.swf",
+        "gameType": "flash",
+        "width": "1000px",
+        "height": "625px",
+        "listed": true
+    },
+    {
+        "title": "Final Match",
+        "description": "Final match game",
+        "tags": "",
+        "route": "final match",
+        "source": "/swf/finalmatch_4.swf",
+        "gameType": "flash",
+        "width": "1000px",
+        "height": "625px",
+        "listed": true
+    }
+]
