@@ -12,17 +12,19 @@ const Play = () => {
     const { id } = useParams();
     console.log("id: " + id);
     const game = games.find(game => game.route === id);
-   
+
     const { title, description, source, gameType, width, height, listed } = game;
     const ruffleContainer = useRef(null);
     useRuffle(ruffleContainer, source, width, height);
+    console.log("ruffle source",source)
+
     if (listed === false) {
         return <div>Game is unlisted please come back later!</div>
     }
 
     if (gameType === "flash") {
-       
 
+        console.log("ruffle first if check")
         return (
             <div className='flex shrink w-full h-screen justify-center items-center'>
                 <AiOutlineArrowLeft className='absolute m-2 top-0 left-0 text-white text-3xl hover:cursor-pointer'
