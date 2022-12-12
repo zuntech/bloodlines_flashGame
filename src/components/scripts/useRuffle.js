@@ -36,7 +36,7 @@ const useRuffle = (Rufflecontainer, gsource, width, height) => {
             "scale": "showAll",
             "quality": "high",
         };
-        window.addEventListener("load", (event) => {
+        window.dispatchEvent("load", (event) => {
             const ruffle = window.RufflePlayer.newest();
             const player = ruffle.createPlayer();
             Rufflecontainer.current.appendChild(player);
