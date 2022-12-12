@@ -43,7 +43,7 @@ const useRuffle = (Rufflecontainer, gsource, width, height) => {
             player.style.width = width;
             player.style.height = height;
             player.load(gsource, {
-                allowScriptAccess: true, // if false swf cant interact with page (recommended false)
+                allowScriptAccess: false, // if false swf cant interact with page (recommended false)
             }).then(() => {
                 console.log("swf loaded");
             }).catch((error) => {
