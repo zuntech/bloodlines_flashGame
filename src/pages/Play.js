@@ -14,8 +14,7 @@ const Play = () => {
     const game = games.find(game => game.route === id);
 
     const { title, description, source, gameType, width, height, listed } = game;
-    const ruffleContainer = useRef(null);
-    useRuffle(ruffleContainer, source, width, height);
+   
     console.log("ruffle source",source)
 
     if (listed === false) {
@@ -23,7 +22,8 @@ const Play = () => {
     }
 
     if (gameType === "flash") {
-
+        const ruffleContainer = useRef(null);
+        useRuffle(ruffleContainer, source, width, height);
         console.log("ruffle first if check")
         return (
             <div className='flex shrink w-full h-screen justify-center items-center'>
