@@ -36,14 +36,14 @@ const useRuffle = (Rufflecontainer, gsource, width, height) => {
             "scale": "showAll",
             "quality": "high",
         };
-        window.dispatchEvent("load", (event) => {
+        window.addEventListener("load", (event) => {
             const ruffle = window.RufflePlayer.newest();
             const player = ruffle.createPlayer();
             Rufflecontainer.current.appendChild(player);
             player.style.width = width;
             player.style.height = height;
             player.load(gsource, {
-                allowScriptAccess: false, // if false swf cant interact with page (recommended false)
+                allowScriptAccess: true, // if false swf cant interact with page (recommended false)
             }).then(() => {
                 console.log("swf loaded");
             }).catch((error) => {
