@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useParams } from "react-router-dom";
 import games from '../game.json'
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import useRuffle from '../components/scripts/useRuffle';
 
 import { BiFullscreen } from 'react-icons/bi';
 import { AiOutlinePause, AiOutlineArrowLeft } from 'react-icons/ai';
-import { FiPlay } from 'react-icons/fi';
 const Play = () => {
 
     const { id } = useParams();
@@ -16,14 +15,14 @@ const Play = () => {
     const { title, description, source, gameType, width, height, listed } = game;
    
     console.log("ruffle source",source)
-
+    const ruffleContainer = useRef(null);
+    useRuffle(ruffleContainer, source, width, height);
     if (listed === false) {
         return <div>Game is unlisted please come back later!</div>
     }
 
     if (gameType === "flash") {
-        const ruffleContainer = useRef(null);
-        useRuffle(ruffleContainer, source, width, height);
+       
         console.log("ruffle first if check")
         return (
             <div className='flex shrink w-full h-screen justify-center items-center'>
