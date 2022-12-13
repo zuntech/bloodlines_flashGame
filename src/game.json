@@ -1,9 +1,9 @@
 [
     {
-        "title": "Dog 1",
-        "description": "Dog 1",
+        "title": "The Face Off",
+        "description": "Characters fighting thier dogs is called",
         "tags": "",
-        "route": "dog 1",
+        "route": "The Face Off",
         "source": "/swf/dog_1.swf",
         "gameType": "flash",
         "width": "1000px",
@@ -11,21 +11,10 @@
         "listed": true
     },
     {
-        "title": "Dog 2",
-        "description": "Dog 2",
+        "title": "Survival Run",
+        "description": "Obatacle couse game is called",
         "tags": "",
-        "route": "dog 2",
-        "source": "/swf/dog_2.swf",
-        "gameType": "flash",
-        "width": "1000px",
-        "height": "625px",
-        "listed": true
-    },
-    {
-        "title": "Final Match",
-        "description": "Final match game",
-        "tags": "",
-        "route": "final match",
+        "route": "Survival Run",
         "source": "/swf/finalmatch_4.swf",
         "gameType": "flash",
         "width": "1000px",
@@ -33,10 +22,10 @@
         "listed": true
     },
     {
-        "title": "Final",
-        "description": "Final match game",
+        "title": "Match the Breeds",
+        "description": "Breed matching game is called",
         "tags": "",
-        "route": "final match",
+        "route": "Match the Breeds",
         "source": "/swf/final.swf",
         "gameType": "flash",
         "width": "1000px",
