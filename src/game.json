@@ -31,5 +31,16 @@
         "width": "1000px",
         "height": "625px",
         "listed": true
+    },
+    {
+        "title": "Final",
+        "description": "Final match game",
+        "tags": "",
+        "route": "final match",
+        "source": "/swf/final.swf",
+        "gameType": "flash",
+        "width": "1000px",
+        "height": "625px",
+        "listed": true
     }
 ]
