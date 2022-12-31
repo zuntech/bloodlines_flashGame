@@ -33,7 +33,7 @@ function Home() {
       >
         <img src="/logo.png" width={400} className="drop-shadow-xl" />
 
-        <h1 className="text-4xl text-white p-5">Welcome to Bloodlines</h1>
+        <h1 className="text-4xl text-white p-5">Welcome to Canine Combat</h1>
         {/* <p className="text-2xl text-gray-600 p-2">
           We have over <span className="text-1xl text-gray-400">{games}+</span>{' '}
           games for you to choose from
